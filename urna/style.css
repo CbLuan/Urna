@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes pisca {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+
+.urna {
+    background: #dbd5c9;
+    padding: 1.8rem;
+    display: flex;
+
+}
+
+.tela {
+    width: 31rem;
+    height: 20rem;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado {
+    background-color: #403a3a;
+    margin-left: 1.8rem;
+}
+
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.teclado--botao {
+    width: 4.3rem;
+    height: 2.5rem;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.6rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.branco {
+    color: #fff;
+    background: #000;
+    font-size: 0.9rem;
+}
+
+
+.corrige {
+    color: #000;
+    background: #f09046;
+    font-size: 0.9rem;
+}
+
+.confirma {
+    width: 4.9rem;
+    height: 3.3rem;
+    color: #000;
+    background: #48C079;
+    font-size: 0.9rem;
+}
+
+.d-1 {
+    flex: 1;
+    display: flex;
+
+}
+
+.d-2 {
+    height: 3.1rem;
+    font-size: 0.9rem;
+    border-top: 2px solid #000;
+    padding-left: 0.6rem;
+}
+
+.d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.2rem;
+}
+
+.d-1-1 {
+    height: 3.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-2 {
+    height: 3.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1-3 {
+    height: 3.1rem;
+}
+
+.numero {
+    display: inline-block;
+    width: 2.5rem;
+    height: 3.1rem;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d-1-4 {
+    flex: 1;
+    line-height: 2rem;
+}
+
+.d-1-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.d-1-image {
+    width: 7rem;
+    height: 8rem;
+    border: 1px solid #000;
+    background: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.d-1-image img {
+    width: 100%;
+    background-size:cover ;
+}
+
+.small {
+    width: 80%;
+    font-size: 0.7rem;
+
+}
+
+.aviso--grande{
+    margin-top: 2rem;
+    text-align: center;
+    font-size:2.5rem ;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.aviso--gigante{
+    font-size: 4.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
